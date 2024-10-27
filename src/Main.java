@@ -1,5 +1,7 @@
 public class Main {
+
     public static void main(String[] args) {
+
         HomeWork_5 homeWork5 = new HomeWork_5();
         homeWork5.checkAge(18);
         homeWork5.checkAge(0);
