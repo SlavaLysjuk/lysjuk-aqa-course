@@ -2,17 +2,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        HomeWork_7_1 homeWork7_1 = new HomeWork_7_1();
-        System.out.println(homeWork7_1.lastString("Hello", 3));
-        System.out.println(homeWork7_1.lastString("Hello", 2));
-        System.out.println(homeWork7_1.lastString("Hello", 1));
-        System.out.println();
+        Animal tiger = new Animal("Tiger", 300, 22);
+        Animal dog = new Animal("Dog", 30, 11);
+        Animal cat = new Animal("Cat", 22, 5);
 
-        HomeWork7_2 homeWork7_2 = new HomeWork7_2();
-        System.out.println(homeWork7_2.concatStr("abc", "xyz"));
-        System.out.println(homeWork7_2.concatStr("Hi", "There"));
-        System.out.println(homeWork7_2.concatStr("xxxx", "There"));
+        tiger.printAnimal();
+        dog.printAnimal();
+        cat.printAnimal();
+
+        tiger.changeName("Puma");
+        tiger.changeWeight(130);
+        tiger.changeAge(5);
 
     }
+
+
 
 }
