@@ -69,5 +69,4 @@ public class Animal {
         System.out.println("Новий вік: " + this.age);
     }
 
-
 }
