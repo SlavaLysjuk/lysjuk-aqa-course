@@ -1,4 +1,4 @@
-public class HomeWork_7_1 {
+public class HomeWork7_1 {
 
     public String lastString(String str, int n) {
         String result = "";
