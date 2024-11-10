@@ -32,12 +32,31 @@ public class Main {
 //        System.out.println(HomeWork8_4.sumWithoutUnlucky13(new int[]{1, 2, 2, 1, 13}));
 //        System.out.println();
 
-        HomeWork8_5 homeWork8_5 = new HomeWork8_5();
-        System.out.println(HomeWork8_5.differenceLargestSmallest(new int[]{10, 3, 5, 6}));
-        System.out.println(HomeWork8_5.differenceLargestSmallest(new int[]{7, 2, 10, 9}));
-        System.out.println(HomeWork8_5.differenceLargestSmallest(new int[]{2, 10, 7, 2}));
-        System.out.println();
+//        HomeWork8_5 homeWork8_5 = new HomeWork8_5();
+//        System.out.println(HomeWork8_5.differenceLargestSmallest(new int[]{10, 3, 5, 6}));
+//        System.out.println(HomeWork8_5.differenceLargestSmallest(new int[]{7, 2, 10, 9}));
+//        System.out.println(HomeWork8_5.differenceLargestSmallest(new int[]{2, 10, 7, 2}));
+//        System.out.println();
 
+//        HomeWork8_6 homeWork8_6 = new HomeWork8_6();
+//        System.out.println(homeWork8_6.doubleChars("The"));
+//        System.out.println(homeWork8_6.doubleChars("AAbb"));
+//        System.out.println(homeWork8_6.doubleChars("Hi-There"));
+
+//        HomeWork8_7 homeWork8_7 = new HomeWork8_7();
+//        System.out.println(homeWork8_7.countHi("abc hi ho"));
+//        System.out.println(homeWork8_7.countHi("ABChi hi"));
+//        System.out.println(homeWork8_7.countHi("hihi"));
+
+        HomeWork8_8 homeWork8_8 = new HomeWork8_8();
+        System.out.println(homeWork8_8.countCode("aaacodebbb"));
+        System.out.println(homeWork8_8.countCode("codexxcode"));
+        System.out.println(homeWork8_8.countCode("cozexxcope"));
+
+        HomeWork8_9 homeWork8_9 = new HomeWork8_9();
+        System.out.println(homeWork8_9.endsWith("AbC", "HiaBc"));
+        System.out.println(homeWork8_9.endsWith("abc", "abXabc"));
+        System.out.println(homeWork8_9.endsWith("Hiabc", "abc"));
 
 
 
