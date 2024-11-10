@@ -61,12 +61,6 @@ public class Main {
         System.out.println(homeWork8_9.endsWith("abc", "abXabc"));
         System.out.println(homeWork8_9.endsWith("Hiabc", "abc"));
 
-
-
-
-
-
-
     }
 
 }
