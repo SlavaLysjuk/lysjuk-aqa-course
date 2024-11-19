@@ -2,17 +2,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Animal tiger = new Animal("Tiger", 300, 22);
-        Animal dog = new Animal("Dog", 30, 11);
-        Animal cat = new Animal("Cat", 22, 5);
+        Person john = new Person("John", 30, "Інжинер");
+        Person mary = new Person("Mary", 25, "Вчитель");
+        Person bob = new Person("Bob", 45, "Лікар");
 
-        tiger.printAnimal();
-        dog.printAnimal();
-        cat.printAnimal();
 
-        tiger.changeName("Puma");
-        tiger.changeWeight(130);
-        tiger.changeAge(5);
+        john.printPerson();
+        mary.printPerson();
+        bob.printPerson();
+
+        john.changeName("Tomas");
+        john.changeAge(44);
+        john.changeProfession("Юрист");
 
     }
 
