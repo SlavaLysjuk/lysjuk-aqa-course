@@ -2,18 +2,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person john = new Person("John", 30, "Інжинер");
-        Person mary = new Person("Mary", 25, "Вчитель");
-        Person bob = new Person("Bob", 45, "Лікар");
+        Man john = new Man("John", 30, PersonRole.ENGINEER, Man.sex);
+        Women mary = new Women("Mary", 25, PersonRole.TEACHER, Women.sex);
+        Man bob = new Man("Bob", 45, PersonRole.DOCTOR, Man.sex);
 
 
-        john.printPerson();
-        mary.printPerson();
-        bob.printPerson();
+        john.print();
+        mary.print();
+        bob.print();
 
-        john.changeName("Tomas");
-        john.changeAge(44);
-        john.changeProfession("Юрист");
+        mary.changeName("Lora");
+        mary.changeAge(33);
+        mary.changeProfession(PersonRole.ARTIST.name());
+        mary.changeSex(Women.sex);
 
     }
 

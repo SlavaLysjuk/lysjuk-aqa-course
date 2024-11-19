@@ -1,13 +1,20 @@
-public class Person {
+import java.util.SplittableRandom;
+
+public class Person implements Displayable {
 
     private String name;
     private String profession;
     private int age;
+    private String sex;
+    private String personRole;
 
     public Person(String name, int age, String profession) {
         this.name = name;
         this.profession = profession;
         this.age = age;
+    }
+
+    public Person() {
     }
 
     void setName(String name) {
@@ -34,12 +41,12 @@ public class Person {
         return age;
     }
 
-    public void printPerson() {
-        System.out.print("Імʼя: " + name + ", ");
-        System.out.print("Вік: " + age + ", ");
-        System.out.print("Професія: " + profession + "");
-        System.out.println();
-    }
+//    public void printPerson() {
+//        System.out.print("Імʼя: " + name + ", ");
+//        System.out.print("Вік: " + age + ", ");
+//        System.out.print("Професія: " + profession + "");
+//        System.out.println();
+//    }
 
     public void changeName(String name) {
         if (!name.isEmpty()) {
@@ -59,12 +66,28 @@ public class Person {
         System.out.print("Вік: " + this.age + ", ");
     }
 
-    public void changeProfession(String profession) {
-        if (!profession.isEmpty()) {
-            this.profession = profession;
+//    public void changeProfession(String profession) {
+//        if (!profession.isEmpty()) {
+//            this.profession = profession;
+//        } else
+//            this.profession = profession;
+//        System.out.println("Profession: " + this.profession);
+//    }
+
+    public void changeProfession(String personRole) {
+        if (!personRole.isEmpty()) {
+            this.personRole = personRole;
         } else
-            this.profession = profession;
-        System.out.println("Професія: " + this.profession);
+            this.personRole = personRole;
+        System.out.print("Професія: " + this.personRole + ", ");
+    }
+
+    public void changeSex(String sex) {
+        if (!sex.isEmpty()) {
+            this.sex = sex;
+        } else
+            this.sex = sex;
+        System.out.print("Стать: " + this.sex);
     }
 
 
@@ -72,6 +95,5 @@ public class Person {
         System.out.print("Person name: " + getName() + "");
     }
 
-//    public abstract void makeNoise();
 
 }
