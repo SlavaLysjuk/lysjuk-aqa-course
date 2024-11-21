@@ -1,6 +1,4 @@
-import java.util.SplittableRandom;
-
-public class Person implements Displayable {
+public abstract class Person implements Displayable {
 
     private String name;
     private String profession;
@@ -94,6 +92,8 @@ public class Person implements Displayable {
     public void print() {
         System.out.print("Person name: " + getName() + "");
     }
+
+    public abstract void run();
 
 
 }

@@ -18,4 +18,9 @@ public class Women extends Person implements Displayable{
         System.out.println();
     }
 
+    @Override
+    public void run() {
+        System.out.print("Run, " + getName() +  " run!");
+    }
+
 }

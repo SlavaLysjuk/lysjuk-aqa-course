@@ -16,6 +16,10 @@ public class Main {
         mary.changeProfession(PersonRole.ARTIST.name());
         mary.changeSex(Women.sex);
 
+        john.run();
+        mary.run();
+        bob.run();
+
     }
 
 }

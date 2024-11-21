@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Man extends Person implements Displayable{
 
     private String name;
@@ -26,6 +28,13 @@ public class Man extends Person implements Displayable{
         System.out.print("Вік: " + age + ", ");
         System.out.print("Професія: " + personRole + ", ");
         System.out.print("Стать: " + sex);
+        System.out.println();
+    }
+
+    @Override
+    public void run() {
+        System.out.println();
+        System.out.print("Run, " + name +  " run!");
         System.out.println();
     }
 }
