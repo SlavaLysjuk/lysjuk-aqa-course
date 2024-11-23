@@ -13,7 +13,7 @@ public class Main {
 
         mary.changeName("Lora");
         mary.changeAge(33);
-        mary.changeProfession(PersonRole.ARTIST.name());
+        mary.changeProfession(PersonRole.TEACHER.name());
         mary.changeSex(Women.sex);
 
         john.run();
