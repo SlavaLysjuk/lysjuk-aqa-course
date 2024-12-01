@@ -37,6 +37,12 @@ public class Main {
         List<Integer> input = Arrays.asList(3, 1, 2, 2, 1, 2, 3, 3, 3);
         System.out.println(homeWork13_6.findMostFrequentElement(input));
         System.out.println();
+
+        HomeWork13_7 homeWork13_7 = new HomeWork13_7();
+        LinkedHashSet<Integer> setA = new LinkedHashSet<>(Arrays.asList(1, 2, 3, 4));
+        LinkedHashSet<Integer> setB = new LinkedHashSet<>(Arrays.asList(3, 5, 6));
+        System.out.println(homeWork13_7.hasCommonElements(setA, setB));
+        System.out.println();
     }
 
 
