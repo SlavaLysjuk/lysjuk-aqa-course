@@ -13,6 +13,13 @@ public class Main {
         System.out.println(homeWork13_2.createMapChars(new String[]{"code", "bug"}));
         System.out.println(homeWork13_2.createMapChars(new String[]{"man", "moon", "main"}));
         System.out.println(homeWork13_2.createMapChars(new String[]{"man", "moon", "good", "night"}));
+        System.out.println();
+
+        HomeWork13_3 homeWork13_3 = new HomeWork13_3();
+        System.out.println(homeWork13_3.countWords(new String[]{"a", "b", "a", "c", "b"}));
+        System.out.println(homeWork13_3.countWords(new String[]{"c", "b", "a"}));
+        System.out.println(homeWork13_3.countWords(new String[]{"c", "c", "c", "c"}));
+        System.out.println();
     }
 
 
