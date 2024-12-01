@@ -26,6 +26,13 @@ public class Main {
         System.out.println(homeWork13_4.mergeStringsByFirstChar(new String[]{"aa", "bb", "cc", "aAA", "cCC", "d"}));
         System.out.println(homeWork13_4.mergeStringsByFirstChar(new String[]{}));
         System.out.println();
+
+        HomeWork13_5 homeWork13_5 = new HomeWork13_5();
+        System.out.println(homeWork13_5.buildResultString(new String[]{"a", "b", "a"}));
+        System.out.println(homeWork13_5.buildResultString(new String[]{"a", "b", "a", "c", "a", "d", "a"}));
+        System.out.println(homeWork13_5.buildResultString(new String[]{"a", "", "a"}));
+        System.out.println(homeWork13_5.buildResultString(new String[]{"a", "b", "c"}));
+        System.out.println();
     }
 
 
