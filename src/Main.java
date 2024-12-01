@@ -43,7 +43,12 @@ public class Main {
         LinkedHashSet<Integer> setB = new LinkedHashSet<>(Arrays.asList(3, 5, 6));
         System.out.println(homeWork13_7.hasCommonElements(setA, setB));
         System.out.println();
-    }
 
+        HomeWork13_8 homeWork13_8 = new HomeWork13_8();
+        TreeSet<Integer> setC = new TreeSet<>(Arrays.asList(1, 2, 3));
+        TreeSet<Integer> setD = new TreeSet<>(Arrays.asList(3, 4, 5));
+        TreeSet<Integer> resultSet = HomeWork13_8.mergeTreeSets(setC, setD);
+        System.out.println(resultSet);
+    }
 
 }
