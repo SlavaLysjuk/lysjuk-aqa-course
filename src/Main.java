@@ -32,6 +32,10 @@ public class Main {
         System.out.println(homeWork13_5.buildResultString(new String[]{"a", "b", "a", "c", "a", "d", "a"}));
         System.out.println(homeWork13_5.buildResultString(new String[]{"a", "", "a"}));
         System.out.println(homeWork13_5.buildResultString(new String[]{"a", "b", "c"}));
+
+        HomeWork13_6 homeWork13_6 = new HomeWork13_6();
+        List<Integer> input = Arrays.asList(3, 1, 2, 2, 1, 2, 3, 3, 3);
+        System.out.println(homeWork13_6.findMostFrequentElement(input));
         System.out.println();
     }
 
