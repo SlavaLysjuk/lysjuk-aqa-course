@@ -22,8 +22,8 @@ public class Main {
         System.out.println();
 
         HomeWork13_4 homeWork13_4 = new HomeWork13_4();
-        System.out.println(homeWork13_4.mergeStringsByFirstChar(new String[]{"salt", "tea", "soda", "toast"})); // {"s": "saltsoda", "t": "teatoast"}
-        System.out.println(homeWork13_4.mergeStringsByFirstChar(new String[]{"aa", "bb", "cc", "aAA", "cCC", "d"})); // {"a": "aaaAA", "b": "bb", "c": "cccCC", "d": "d"}
+        System.out.println(homeWork13_4.mergeStringsByFirstChar(new String[]{"salt", "tea", "soda", "toast"}));
+        System.out.println(homeWork13_4.mergeStringsByFirstChar(new String[]{"aa", "bb", "cc", "aAA", "cCC", "d"}));
         System.out.println(homeWork13_4.mergeStringsByFirstChar(new String[]{}));
         System.out.println();
     }
