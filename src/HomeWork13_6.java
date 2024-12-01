@@ -18,7 +18,6 @@ public class HomeWork13_6 {
                 mostFrequentElement = entry.getKey();
             }
         }
-
         return mostFrequentElement;
     }
 
