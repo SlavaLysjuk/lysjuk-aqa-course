@@ -16,7 +16,6 @@ public class QaAutoHillelTest {
         driver.get("https://guest:welcome2qauto@qauto.forstudy.space/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-
         WebElement guestLogButton = driver.findElement(By.xpath("//button[text()='Guest log in']"));
         Assert.assertTrue(guestLogButton.isDisplayed(), "Кнопка Guest log in відсутня");
         guestLogButton.click();
