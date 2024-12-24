@@ -40,7 +40,7 @@ public class ActionAndAssertsTest {
     @Test(description = "Тест-кейс 2: Перевірка кольору фону кнопки \"Sign up\"")
     public void testCheckButtonSignUpBackgroundColor() {
         WebElement signUpButton = driver.findElement(By.xpath("//button[text()='Sign up']"));
-        String backgroundColor = signUpButton.getCssValue("color");
+        String backgroundColor = signUpButton.getCssValue("background-color");
 
         assertThat(backgroundColor)
                 .isEqualTo("rgba(2, 117, 216, 1)")
