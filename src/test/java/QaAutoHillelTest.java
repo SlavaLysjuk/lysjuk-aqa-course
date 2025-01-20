@@ -1,18 +1,36 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
-public class QaAutoHillelTest {
+public class QaAutoHillelTest extends BaseTest{
+
+    @BeforeSuite
+    public void setUpSuite() {
+        log.info("This is BeforeSuite");
+    }
+    @BeforeTest
+    public void setUpTest() {
+        log.info("This is setUpTest");
+    }
+    @BeforeClass
+    public void setUpClass() {
+        log.info("This is setUpClass");
+    }
+    @BeforeGroups
+    public void setUpGroups() {
+        log.info("This is setUpGroups");
+    }
+    @BeforeMethod
+    public void setUpMethod() {
+        log.info("This is setUpMethod");
+
+    }
 
     @Test
     public void testCanGuestLogInAndOutModuleText() throws InterruptedException {
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
         driver.get("https://guest:welcome2qauto@qauto.forstudy.space/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -21,18 +39,38 @@ public class QaAutoHillelTest {
         guestLogButton.click();
 
         String borderMenuElementGarage = driver.findElement(By.xpath("//a[text()=' Garage ']")).getText();
-        System.out.println(borderMenuElementGarage);
+        log.info(borderMenuElementGarage);
 
         String borderMenuElementFuelExpenses = driver.findElement(By.xpath("//a[text()=' Fuel expenses ']")).getText();
-        System.out.println(borderMenuElementFuelExpenses);
+        log.info(borderMenuElementFuelExpenses);
 
         String borderMenuElementInstructions = driver.findElement(By.xpath("//a[text()=' Instructions ']")).getText();
-        System.out.println(borderMenuElementInstructions);
+        log.info(borderMenuElementInstructions);
 
         String borderMenuElementLogOut = driver.findElement(By.xpath("//a[text()=' Log out ']")).getText();
-        System.out.println(borderMenuElementLogOut);
+        log.info(borderMenuElementLogOut);
+    }
 
-        driver.quit();
+    @Test
+    public void testCanGuestLogInAndOutModuleText2() throws InterruptedException {
+        driver.get("https://guest:welcome2qauto@qauto.forstudy.space/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        WebElement guestLogButton = driver.findElement(By.xpath("//button[text()='Guest log in']"));
+        Assert.assertTrue(guestLogButton.isDisplayed(), "Кнопка Guest log in відсутня");
+        guestLogButton.click();
+
+        String borderMenuElementGarage = driver.findElement(By.xpath("//a[text()=' Garage ']")).getText();
+        log.info(borderMenuElementGarage);
+
+        String borderMenuElementFuelExpenses = driver.findElement(By.xpath("//a[text()=' Fuel expenses ']")).getText();
+        log.info(borderMenuElementFuelExpenses);
+
+        String borderMenuElementInstructions = driver.findElement(By.xpath("//a[text()=' Instructions ']")).getText();
+        log.info(borderMenuElementInstructions);
+
+        String borderMenuElementLogOut = driver.findElement(By.xpath("//a[text()=' Log out ']")).getText();
+        log.info(borderMenuElementLogOut);
     }
 
 }

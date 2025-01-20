@@ -15,6 +15,7 @@ public class WebDriverFactory {
         WebDriver driver = null;
 
         if ("chrome".equalsIgnoreCase(browser)) {
+
             driver = new ChromeDriver();
         } else if ("edge".equalsIgnoreCase(browser)) {
             driver = new EdgeDriver();

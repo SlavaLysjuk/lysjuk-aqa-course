@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import pages.FramePage;
 import pages.GaragePage;
 import pages.HillelQAutoHomePage;
+import pages.InstructionsPage;
 import utils.ConfigReader;
 
 import java.time.Duration;
@@ -24,6 +25,7 @@ public class BaseTest {
     GaragePage garagePage;
     HillelQAutoHomePage hillelQAutoHomePage;
     FramePage framePage;
+    InstructionsPage instructionsPage;
 
 
     @BeforeMethod
@@ -37,6 +39,8 @@ public class BaseTest {
         hillelQAutoHomePage = new HillelQAutoHomePage(driver, wait);
         garagePage = new GaragePage(driver, wait);
         framePage = new FramePage(driver, wait);
+        instructionsPage = new InstructionsPage(driver, wait);
+
 
     }
 
