@@ -22,8 +22,5 @@ public class WorkWithFilesTest extends BaseTest {
         instructionsPage.clickInstruction()
                 .isLoaded()
                 .readFile();
-
-
-
     }
 }
