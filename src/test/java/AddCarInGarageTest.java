@@ -1,10 +1,14 @@
+import io.qameta.allure.*;
 import org.testng.annotations.Test;
 import utils.ConfigReader;
 
 public class AddCarInGarageTest extends BaseTest {
 
-    //TODO Для запуску на іншому браузері, в config.properties потрібно змінити на інший браузер.
     @Test
+    @Description("Додавання машини Audi TT, та перевірка заповнених даних")
+    @Owner("Slava Lysjuk")
+    @Link("JIRA-12345")
+    @Severity(SeverityLevel.BLOCKER)
     public void testAddCarAudiTTInGarage() {
 
         hillelQAutoHomePage.openUrl(ConfigReader.getValue("baseUrl"));
@@ -20,7 +24,7 @@ public class AddCarInGarageTest extends BaseTest {
                 .getMileageValue("20")
                 .checkLogo()
                 .checkLogoUrl("audi.png");
-
         garagePage.assertAll();
+
     }
 }

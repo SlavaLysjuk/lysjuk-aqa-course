@@ -41,7 +41,6 @@ public class BaseTest {
         framePage = new FramePage(driver, wait);
         instructionsPage = new InstructionsPage(driver, wait);
 
-
     }
 
     @AfterMethod(alwaysRun = true)
