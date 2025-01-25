@@ -7,7 +7,7 @@ public class AddCarInGarageTest extends BaseTest {
     @Test
     @Description("Додавання машини Audi TT, та перевірка заповнених даних")
     @Owner("Slava Lysjuk")
-    @Link("JIRA-12345")
+    @Link("https://lms.ithillel.ua/groups/66a3b3f284150597717a2ab7/homeworks/6787738aaf5b996f98f997a7")
     @Severity(SeverityLevel.BLOCKER)
     public void testAddCarAudiTTInGarage() {
 
